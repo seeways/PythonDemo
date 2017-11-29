@@ -4,6 +4,7 @@
 # @Author  : TaoYuan (1876665310@qq.com)
 # @Link    : http://blog.csdn.net/lftaoyuan  Python互助学习qq群：315857408
 # @Version : V1.0.0
+# @des     : 杨辉三角
 
 # def triangles():  # 列表生成式
 #     L = [1]
