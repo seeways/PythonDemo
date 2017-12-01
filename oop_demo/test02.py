@@ -22,7 +22,7 @@ dog = Dog()
 dog.run()
 dog.dog_run()
 
-print('-'*30)
+print('-' * 30)
 
 a = list()
 b = Animal()
@@ -33,4 +33,8 @@ print(isinstance(b, Animal))
 print(isinstance(c, Dog))
 # 上述没错，但是c同时也可以是Animal
 print(isinstance(c, Animal))
+
+# 获取该对象所有的属性和方法
+print(dir(Dog()))
+
 
