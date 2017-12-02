@@ -25,9 +25,12 @@ else:
         file = open(filename, 'wb')
         file.write(html)
         file.close()
-        # print(html)
+        print("--------页面信息----------")
+        print(html)
+
     else:
         print("Maybe The Program is Error!")
 
 # 头信息
+print("--------头信息----------")
 print(response.info())
