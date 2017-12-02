@@ -4,9 +4,9 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/get/taoyuan')
 def hello_world():
-    return "Hello World! \n Test Two"
+    return "Hello World!"
 
 
 if __name__ == '__main__':

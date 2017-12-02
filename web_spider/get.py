@@ -6,8 +6,13 @@
 # @Version : V1.0.0
 
 import urllib.request
+from test05_custom_class import Chain
 
-request = urllib.request.Request('http://www.baidu.com/')
+
+# 动态拼接url
+url = "{}{}".format('http://127.0.0.1:5000', Chain().get.taoyuan)
+
+request = urllib.request.Request(url)
 response = urllib.request.urlopen(request)
 if response.getcode() != 200:
     print("None!")

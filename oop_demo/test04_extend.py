@@ -7,6 +7,8 @@
 
 import inspect
 
+class G(object):
+    pass
 
 class D(object):
     def __init__(self):
@@ -28,7 +30,7 @@ class C(D, F):
         print("C")
 
 
-class B(E, D):
+class B(E, G):
     def __init__(self):
         print("B")
 
