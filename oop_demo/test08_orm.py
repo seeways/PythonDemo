@@ -4,6 +4,7 @@
 # @Link    : http://blog.csdn.net/lftaoyuan
 # Github   : https://github.com/seeways
 # @Remark  : Python学习群：315857408
+import inspect
 
 
 class Field(object):
@@ -102,14 +103,17 @@ class User(Model):
     email = StringField("email")
 
 
-# 创建实例
-u = User(id=1, username="TaoYuan", password="123456", email="1876665310@qq.com")
+if __name__ == '__main__':
+    # 创建实例
+    u = User(id=1, username="TaoYuan", password="123456", email="1876665310@qq.com")
 
-# 增删改查
-u.save()
-print('-' * 30)
-u.delete()
-print('-' * 30)
-u.update()
-print('-' * 30)
-u.find()
+    # 增删改查
+    u.save()
+    print('-' * 30)
+    u.delete()
+    print('-' * 30)
+    u.update()
+    print('-' * 30)
+    u.find()
+    print('-' * 15, "调用顺序如下", '-' * 15)
+    print(inspect.getmro(User))
