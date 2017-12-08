@@ -6,6 +6,7 @@
 # @Remark  : Python学习群：315857408
 import os
 
+
 # 写法1
 # try:
 #     f = open(os.path.abspath(os.path.join(os.getcwd(), "../work/test.txt")), "r")
@@ -19,6 +20,17 @@ import os
 #     print(f.read())
 
 # 写法3(推荐)
-with open(os.path.abspath(os.path.join(os.getcwd(), "../work/test.txt")), "r") as f:
-    for line in f.readlines():
-        print(line.strip()) # 把末尾的'\n'删掉
+# with open(os.path.abspath(os.path.join(os.getcwd(), "../work/test.txt")), "r") as f:
+#     for line in f.readlines():
+#         print(line.strip()) # 把末尾的'\n'删掉
+
+
+def return_sum( a, b):
+    __a = int(a)
+    __b = int(b)
+    return __a + __b
+
+
+if __name__ == '__main__':
+    print(return_sum(1, 2))
+
