@@ -5,8 +5,10 @@
 # @Link    : https://github.com/seeways or http://blog.csdn.net/lftaoyuan
 # @Version : $Id$
 
-months="JanFebMarAprMayJunJulAugSepOctNovDec"
-n = input("month:")
-pos=(int(n)-1)*3
-month_pos = months[pos:pos+3]
-print("month:"+month_pos)
+# months="JanFebMarAprMayJunJulAugSepOctNovDec"
+# n = input("month:")
+# pos=(int(n)-1)*3
+# month_pos = months[pos:pos+3]
+# print("month:"+month_pos)
+print(type({"k1":{1,2,3},"k2":"str"}))
+print()
