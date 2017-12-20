@@ -6,7 +6,6 @@
 # @Remark  : Python学习群：315857408
 import socket
 
-
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # 建立连接:
 s.connect(('127.0.0.1', 9999))
