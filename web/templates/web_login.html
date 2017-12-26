@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!-- 用来显示登录表单的模板 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+	{% if message %}
+	<p style="color: red">{{ message }}</p>
+	{% endif %}
+	<form action="/sign_in" method="post">
+		<legend>Please Login</legend>
+		username: <p><input name="username" placeholder="Username" value="{{ username }}"></p>
+		password: <p><input name="password" placeholder="Password" type="password"></p>
+		<p><button type="submit">Login In</button></p>
+	</form>
+
+</body>
+</html>

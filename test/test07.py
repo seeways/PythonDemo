@@ -5,10 +5,19 @@
 # @Link    : https://github.com/seeways or http://blog.csdn.net/lftaoyuan
 # @Version : $Id$
 
-# months="JanFebMarAprMayJunJulAugSepOctNovDec"
-# n = input("month:")
-# pos=(int(n)-1)*3
-# month_pos = months[pos:pos+3]
-# print("month:"+month_pos)
-print(type({"k1":{1,2,3},"k2":"str"}))
-print()
+
+# def a(*x):
+#     print(x)
+#     if len(x)<1:
+#         raise TabError('1')
+#     res = 1
+#     for i in x:
+#         res = res * i
+#     return res
+#
+#
+# b = a(1, 2, 3)
+# print(b)
+
+l = 1, 2, 3, 10, -5
+print(min(l))
