@@ -22,7 +22,6 @@ def keywordargs(no, *name, **keyword):  # 关键词参数 如果有可变参数�
     return "no:", no, "name:", name, "other:", keyword
 
 
-
 if __name__ == '__main__':
     print(powers(3, 5))
     print(cola(1, 2, 3))

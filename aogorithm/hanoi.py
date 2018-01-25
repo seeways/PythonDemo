@@ -4,6 +4,9 @@
 # @Author  : TaoYuan (1876665310@qq.com)
 # @Link    : https://github.com/seeways or http://blog.csdn.net/lftaoyuan
 # @Version : 1
+"""
+汉诺塔算法
+"""
 
 # 第一个塔为初始塔，中间的塔为借用塔，最后一个塔为目标塔
 i = 0  # 记录步数
