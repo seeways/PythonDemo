@@ -14,16 +14,16 @@
 height = 1.75
 weight = 80.5
 
-bmi = weight /(height ** 2)
+bmi = weight / (height ** 2)
 print(bmi)
 
-if bmi<18.5:
-	print("so light!")
+if bmi < 18.5:
+    print("so light!")
 elif 18.5 <= bmi < 25:
-	print("nice!")
+    print("nice!")
 elif 25 <= bmi < 28:
-	print("little heavy!")
-elif 28 <= bmi <32:
-	print("fat!")
+    print("little heavy!")
+elif 28 <= bmi < 32:
+    print("fat!")
 elif bmi > 32:
-	print("so fat!!!")
+    print("so fat!!!")

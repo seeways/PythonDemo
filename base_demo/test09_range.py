@@ -8,20 +8,19 @@
 sum = 0
 
 # range(101) 也可以
-for x in range(0,101):
-	sum += x
+for x in range(0, 101):
+    sum += x
 
-print("for:%d" %sum)
-
+print("for:%d" % sum)
 
 sum = 0
 n = 100
-while n>0:
-	sum += n
-	n -= 1
+while n > 0:
+    sum += n
+    n -= 1
 
-print("while:%d" %sum)
+print("while:%d" % sum)
 
 L = ['Bart', 'Lisa', 'Adam']
 for name in L:
-	print("Hello", name)
+    print("Hello", name)
