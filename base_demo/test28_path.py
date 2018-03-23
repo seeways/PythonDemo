@@ -7,28 +7,31 @@
 import os
 import sys
 
-if __name__ == "__main__":
-    print("__file__=%s" % __file__)
+print('-----------获取本文件地址----------')
+print(os.path.realpath(__file__))
+print(os.path.abspath(__file__))  # 推荐方法
 
-    print("os.path.realpath(__file__)=%s" % os.path.realpath(__file__))
+# 注意这两个方法的分隔符，不推荐使用
+print(__file__)
+print(sys.argv[0])
 
-    print("os.path.dirname(os.path.realpath(__file__))=%s" % os.path.dirname(os.path.realpath(__file__)))
 
-    print("os.path.split(os.path.realpath(__file__))=%s" % os.path.split(os.path.realpath(__file__))[0])
+print('-----------获取本文件所在目录----------')
+print(os.path.dirname(os.path.realpath(__file__)))
+print(os.path.split(os.path.realpath(__file__))[0])
+print(os.getcwd())
+print(sys.path[0])
 
-    print("os.path.abspath(__file__)=%s" % os.path.abspath(__file__))
+print('-----------获取上级目录----------')
+print(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+print(os.path.abspath(os.path.dirname(os.getcwd())))
+print(os.path.abspath(os.path.join(os.getcwd(), "..")))
 
-    print("os.getcwd()=%s" % os.getcwd())
+print('-----------获取上上级目录---------')
+print(os.path.abspath(os.path.join(os.getcwd(), "../..")))
 
-    print("sys.path[0]=%s" % sys.path[0])
+print('-----------本级目录下新建目录---------')
+print(os.path.abspath(os.path.join(os.getcwd(), "img")))
 
-    print("sys.argv[0]=%s" % sys.argv[0])
-
-    print('-----------获取上级目录----------')
-    print(os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
-    print(os.path.abspath(os.path.dirname(os.getcwd())))
-    print(os.path.abspath(os.path.join(os.getcwd(), "..")))
-
-    print('-----------获取上上级目录---------')
-    print(os.path.abspath(os.path.join(os.getcwd(), "../..")))
-
+print('-----------本盘符下新建目录---------')
+print(os.path.abspath(os.path.join(os.getcwd(), "/img")))
